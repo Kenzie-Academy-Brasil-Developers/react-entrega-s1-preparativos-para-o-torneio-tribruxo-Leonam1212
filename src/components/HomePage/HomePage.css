@@ -1,0 +1,41 @@
+.homePage {
+   
+    width: 350px;
+    height:500px;
+    
+    background: url(../../img/29bebd33596e04549957838362443d49.png);
+    background-size:cover;
+   
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    border-radius:8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+h1 {
+    text-align:center;
+    font-size:16px;
+    margin-top: 30px;
+}
+
+.description {
+    padding: 12px;
+    text-align:center;
+    width: 65%;
+}
+.homeButton {
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    text-transform:uppercase;
+    background-color: rgba(252, 154, 7, 0.823);
+    color:white;
+    margin-top: -1px;
+}

@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding :0;
+    box-sizing: border-box;
+   
+}
+.Card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: url(https://i.pinimg.com/564x/97/62/46/9762468cc57ba77bc51c2b83499fbc3d.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px rgb(46, 44, 44);
+    border: 2px solid black;
+    color: rgb(31, 16, 16);
+    justify-content:center;
+    text-align: center;
+
+ 
+
+}
+.witches {
+    max-width: 100%;
+    height: 150px;
+    padding-top: 10px;
+   
+
+}
+.front {
+    width: 100%;
+    height: 230px;
+    font-size: 10px;
+    text-align: center;
+}
+#front h1 {
+    font-size: 16px;
+    color: white;
+}
+#front p {
+    color: white;
+    font-size:15px
+}
+#front span {
+    display: block;
+    font-size: 16px;
+    width: 90%;
+    margin:  auto;
+    border-radius: 1rem;
+    color: rgb(184, 181, 181);
+   
+}
+
+
+#back {
+    width: 100%;
+    display: none;
+    height: 250px;
+    background-color:blue; 
+
+}
+
+@media (min-width: 768px) {
+
+    .Card {
+        display: flex;
+        flex-direction: row;
+        width: 280px;
+        background: url(https://i.pinimg.com/564x/97/62/46/9762468cc57ba77bc51c2b83499fbc3d.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 8px;
+        box-shadow: 5px 5px 10px rgb(46, 44, 44);
+        border: 1px solid transparent;
+        color: rgb(248, 245, 245);
+      
+    
+    }
+    #front {
+        width: 100%;
+        height: 415px;
+        font-size: 10px;
+        text-align: center;
+       
+    }
+    
+    .witches {
+        width: 90%;
+        height: 320px;
+        padding: 14px;
+        
+    }
+
+
+}

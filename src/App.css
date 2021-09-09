@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+
+body {
+   background: url(https://images8.alphacoders.com/110/thumb-1920-1102284.jpg);
+   background-size:auto;
+   background-repeat: no-repeat;
+   background-position:center;
+   width: 100%;
+  height: 800px;
+  font-family: 'Amatic SC', cursive;
+ 
+}
+.App {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly
+  
+}
+
+.tela2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 768px) { 
+
+  .App {
+  
+   
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+   
+    
+  }
+  .tela2 {
+    display: flex;
+   
+  }
+  .game {
+    display: flex;
+    margin: 0 auto;
+  }
+}
+
+
+
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
