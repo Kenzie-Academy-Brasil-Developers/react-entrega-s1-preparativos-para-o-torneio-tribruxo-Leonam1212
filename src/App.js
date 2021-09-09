@@ -15,10 +15,6 @@ function App() {
       .catch((e) => console.log(e))
   },[])
 
-  
-console.log(students)
-  
-console.log(theThree)
       
 const threeStundents = () => {
 
