@@ -9,7 +9,7 @@ function App() {
   const [theThree,  setTheThree] = useState([])
   const [isClick, setIsClick] = useState(false)
   useEffect (() => {
-      fetch("http://hp-api.herokuapp.com/api/characters/students")
+      fetch("https://hp-api.herokuapp.com/api/characters/students")
       .then((response) => response.json())
       .then((response) => setStudents(response))
       .catch((e) => console.log(e))
