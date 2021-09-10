@@ -50,9 +50,9 @@ setIsClick(true)
         { !isClick && <HomePage threeStudents ={threeStundents}/>}
         </div>
 
-        <div>
+     
           { isClick && < RenderStudents threeStudents = {theThree} newSelection = {threeStundents}/>}
-        </div>
+        
       </div>
   );
 }
