@@ -10,9 +10,6 @@ return (
             <img  className = "witches" src = {img} alt = {name}/>
             <span>{house}</span>
        </div>
-
-
-       
    </div>
   )
 }

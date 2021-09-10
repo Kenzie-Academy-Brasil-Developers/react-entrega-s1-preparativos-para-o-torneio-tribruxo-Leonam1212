@@ -1,5 +1,6 @@
 import RenderStudents from './components/RenderStudents'
 import HomePage from './components/HomePage'
+
 import {useState, useEffect} from "react"
 import './App.css';
 
@@ -8,6 +9,7 @@ function App() {
   const [students, setStudents] = useState([])   
   const [theThree,  setTheThree] = useState([])
   const [isClick, setIsClick] = useState(false)
+  
   useEffect (() => {
       fetch("https://hp-api.herokuapp.com/api/characters/students")
       .then((response) => response.json())
@@ -15,6 +17,10 @@ function App() {
       .catch((e) => console.log(e))
   },[])
 
+  
+console.log(students)
+  
+console.log(theThree)
       
 const threeStundents = () => {
 
@@ -40,15 +46,13 @@ setIsClick(true)
     <div className="App">
 
       
-      <div className = "home">
+        <div className = "home">
+        { !isClick && <HomePage threeStudents ={threeStundents}/>}
+        </div>
 
-       { !isClick && <HomePage threeStudents ={threeStundents}/>}
-      </div>
-
-      <div>
-        
-      </div>
-        { isClick && < RenderStudents threeStudents = {theThree} newSelection = {threeStundents}/>}
+        <div>
+          { isClick && < RenderStudents threeStudents = {theThree} newSelection = {threeStundents}/>}
+        </div>
       </div>
   );
 }
